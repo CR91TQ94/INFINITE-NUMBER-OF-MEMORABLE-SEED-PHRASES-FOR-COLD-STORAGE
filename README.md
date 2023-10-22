@@ -417,16 +417,16 @@ To ensure the permanence of your system, periodically engage in the practice of 
 ## USING OTHER INPUTS
 Use always AES encryption + various hashes. **Never use "only hash" to generate the entropy.** Remember, in 10-20 years maybe we will have quantum computers, these will be able to check hashes of every single word or combination in all available books. So be smart. 
 
-As an idea, you can use, instead of 3 verses, following inputs:
+As an idea, instead of three verses that generate three hashes, you can use following inputs:
 
-1. Use 3 ISBN numbers of exact edition of your top 3 books. This could be: 
+1. Use three ISBN numbers of exact edition of your top three books. This could be: 
 ISBN 978-3828-4757-43-85, or similar.
-1. 3 phone numbers of your family, incl. international call (example: +44578439574389)
-Use 3 chemical formulas such as: (CH3)3CH, C12H16N2 or so.
-1. 3 engine types of your beloved Mercedes cars such as: M260 E20 DE LA, M282 DE14 or similar
-1. The first 30 notes in a three-part fugue, each voice is the separate input, such as: 64,67,61,62,66,63,63,62,68,69,65,63,63,62,68,69,6564,67,61 for voice 1 and so on.
+1. three phone numbers of your family, incl. international call (example: +44578439574389)
+1. Use three chemical formulas such as: (CH3)3CH, C12H16N2 or so for each of three hashes.
+1. three engine types of your beloved Mercedes cars such as: M260 E20 DE LA, M282 DE14 or similar
+1. The first 30 notes in a three-part fugue, each voice is the separate input, such as: 64,67,61,62,66,63,63,62,68,69,65,63,63,62,68,69,65,64,67,61 for voice 1 and so on for voice 2 and 3.
 
-So be creative, but not too creative, otherwise you will forget it! You can use something mathematical formulas with various lengths such as "pi^13.55". Remember: you should be able to remember it!
+So be creative, but not too creative, otherwise you will forget it! You can use something like mathematical formulas with various lengths such as "pi^13.55". Remember: you should be able to remember it!
 
 ##  THE MATH
 "But in 10 or 20 years these sites will maybe not work!"
