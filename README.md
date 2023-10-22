@@ -50,7 +50,7 @@ The system can use some known to you ideas for implementation such as:
 • MIDI numbers of a musical piece.
 
 Below will use a book to create 3 hashes, flush it through AES encryption, and make one numbered final hash.
-### A) Creating a seed entropy by using a book. 
+### A) Creating the seed entropy by using a book. 
 We will use New King James Bible of 1611 to create our first seed entropy.
 
 &#x1F534; **Please, do not use the same book. It is possible that it can be used by quantum computers in the future. Use an obscure book you like. Be very careful that you don't make any typo. Try the system twice: once following this tutorial, and once making your own seeds.** &#x1F534;
@@ -130,6 +130,161 @@ So this will be used to generate our FIRST seed, or the first wallet. The final 
 `86793e0d01c7169f8e0be36f0d1f01eba783d53368ad2ed921449997db6c154d`
 
 <img width="977" alt="d799f6bfcb5a0a0acc94f" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/27ddd4e9-060c-45a6-baaa-f99a86eba5df">
+
+### B) Creating the seed from the entropy.
+
+_In CyberChef we have created a long string of numbers and letters called a hex string. We will use it to create our seed. 
+_
+Copy the output from CyberChef second window `86793e0d01c7169f8e0be36f0d1f01eba783d53368ad2ed921449997db6c154d` and go to Ian Coleman BIP39 tool page.
+
+<img width="976" alt="6b582213c67b7e3706e55" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b2a5f9d0-832a-4e07-b3e0-99885d4b012a">
+
+Click on **Generate** to initialize (don't worry it stays 15 words):
+
+<img width="598" alt="48555fa276352f4f35e70" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d31c83aa-2f27-425c-b6f2-c10f66e8c9bd">
+
+Now, click on **Show entropy details**
+
+<img width="195" alt="80837af274b66d9b41ecd" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b91cd052-b771-4bff-ac1f-4815e956f4b9">
+
+When ckecked, a new field above called **entropy** will open. Select the text inside of the field and delete it. Next, paste the text you copied from CyberChef `86793e0d01c7169f8e0be36f0d1f01eba783d53368ad2ed921449997db6c154d`:
+
+<img width="854" alt="92daf5bcff3e238297684" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b927815c-bec6-432c-b56d-d5194f0b7e66">
+
+**IMPORTANT: Select 24 words as mnemonic length (or 12 if you prefer, here 24):**
+
+<img width="647" alt="24b2dab7651ae152029f4" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/aa018d11-5e52-41ce-a5ee-6f5d800a44b6">
+
+Finally we have got our 24 word mnemonic phrase:
+
+<img width="951" alt="95a7d044ff74f22003926" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/c29f7da9-cc00-48a0-948e-8522f78983c9">
+
+The phrase is:
+
+`accident angry rent manage fade foot sudden beauty parade deal maple among learn affair plug slim high depth urge swarm swallow lazy camera gain`
+
+This is your seed for the Wallet #1.
+
+### C) Receiving addresses 
+
+Now we can proceed to get information about our incoming addresses, the Bitcoin is already selected. Be sure that you use BIP44 derivation path:
+
+<img width="275" alt="2a793d666cd72decf17c0" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/3b291c80-3db7-4865-aad1-53abf460d54f">
+
+The Bitcoin is automatically selected, here is the address. Remember, do not change any other settings. Your first address (0, i.e. zero) is the correct first receiving address:
+
+<img width="624" alt="f08dfc964ec75798d875d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/94ce9bea-6be9-4013-a73e-32153ec1e25b">
+
+Your BTC address is:
+
+`1NWS1jfrtLSY2YwjNnLmWZkmtM2awuVeCY`
+
+For other coins select the desired coin:
+
+<img width="482" alt="8ffe6e89c2fc258e09761" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/664e5e20-407d-4909-bd98-dff8b4368e76">
+
+Ripple/XRP:
+
+<img width="640" alt="4687c8d75c6c2be0504df" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d96525d0-9a29-4c30-b22a-2540432266aa">
+
+Ripple XRP address is:
+
+`rQBWfyvfh1kMi5DFAdebUHKhTbWeEwpyin`
+
+Ethereum:
+
+<img width="699" alt="160c5a5689a8c3ae37071" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/8ff00f2d-e63a-402a-a061-d57a5a2b7c08">
+
+Ethereum ETH (and other L2 addresses) is:
+
+`0x5CCE7e6A7d2110B6ca93Ae572CDf173AfFFe0C36`
+
+### D) VERIFY the addresses in the wallet.
+
+We will use OneKey to import our seed and see if we get the same addresses.
+
+&#x1F534; **REMEMBER: keep the computer offline all the time.** &#x1F534;
+
+Open OneKey, start by importing a wallet using the seed:
+
+<img width="276" alt="cf03ddc942572f2abb846" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/e794588b-3b6b-493c-8fb7-72baf232513f">
+
+<img width="270" alt="f68dac89f8fb5c77f29b9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/f991b81e-e222-42d0-a1e5-c0ce985ab153">
+
+<img width="224" alt="25394329cd7b4da760e79" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/beebfe45-38a1-481e-b229-c15813d4a7ab">
+
+And paste the seed you have generated in BIP39 tool:
+
+`accident angry rent manage fade foot sudden beauty parade deal maple among learn affair plug slim high depth urge swarm swallow lazy camera gain`
+
+#### Now we will see if we get the same addresses.
+Click on Ethereum (here I am using online computer therefore the green dot. Because you use the offline computer, it will not be green and the icons will be missing, that is OK) and generate new address:
+
+<img width="155" alt="1ddf4322932344bde0dba" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/c406bf44-0eb4-401c-b4ac-c108d2b15b74">
+
+Click on Receive to see the address:
+
+<img width="178" alt="84078a53385e18663695d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/cc85342c-a26f-408d-b1cf-a6028a030982">
+
+<img width="376" alt="a6d1b22f66c5551d9242e" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/197d9683-2fd1-4ee7-872b-ee511635d1e5">
+
+**Good! It is the same address as in the BIP39 generator.**
+
+Now check XRP. Click on the dropdown icon of the network and choose Ripple, and then Create account:
+
+<img width="292" alt="a371fd1a404bd8e00e35d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/973b0b5e-0a6d-495e-b7a3-e0b2e5294577">
+
+Again, click on Receive to see the receiving address:
+
+<img width="368" alt="37e36312e142285f00212" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/cc82e004-2f62-4db0-b4f0-529a7a80f4dd">
+
+**Good! It is the same address as in the BIP39 generator.**
+
+Now let us do the same with Bitcoin.
+
+Choose: Legacy. Click again on "Receive" to see the address:
+
+<img width="372" alt="5460f5e1ceeeb114683b9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/ed47eaab-01d7-4c3a-9bf2-459c3ed6088d">
+
+**Good! It is the same address as in the BIP39 generator.**
+
+Now, if you want to use a newer type of the Bitcoin address, select NATIVE SEGWIT.
+
+Click on the wallet dropdown:
+
+<img width="330" alt="6c21ff64a09fc6e3cb558" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/9ec634d6-ab3f-4afa-95f8-1dcf0b12cdf2">
+
+Click on +:
+
+<img width="382" alt="2999e31d897767194619e" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/687ee27a-8349-4024-a7c5-c04233ffda0f">
+
+Click on add account:
+
+<img width="245" alt="34afa92e18d1521810c4d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d4b14e83-a5e7-43e2-bc5b-a1ce7b8ee681">
+
+Choose Native Segwit, and click on the Receiving address:
+
+<img width="373" alt="32071716aa3808c41ccff" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b4438636-621b-46b8-ac80-7cb7061a8cdf">
+
+Well, this is an unknown address. How it can happen?
+
+Go to your BIP39 generator.
+
+Instead of BIP44 use **BIP84** as the Derivation path:
+
+<img width="389" alt="8c70c387ccb7cb1a83505" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/e93258ca-d169-4374-9886-72047204b74d">
+
+Well, this is the same address as in the OneKey wallet, so everything is good!!
+
+<img width="689" alt="6aaf234049fddb026987e" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b20124d2-586c-44c3-91d9-85e048c91963">
+
+## SYSTEM OF WALLETS
+BTC uses BIP84 nowadays and you should use it as well.
+All other coins use BIP44. Please check Coinomi's tool (fork of the Ian Coleman's BIP39 generator) for missing coins. Search for it.
+Every coin wallet starts with derivation path that is 0 (zero). It is the FIRST wallet. You should use that address, but for the privacy reasons using a wallet "online", you can increase your privacy by using other addresses from the same wallet seed. However HERE WE WILL USE ONLY THE FIRST, because it will be our cold storage, and you don't need any privacy for that reason.
+Some networks still don't have import function (Hedera's HBAR), so you cannot use your own seed, unfortunately. 
+Some coins are not available in wallets (Quant or Kaspa). Still you can use your 24-word seed phrase to create wallets for these coins in their respective wallets. In order to do it you need to use a separate wallet app just for these coins. However, be sure that you should always enter your seed into an offline device to get the receive address and afterwards you will wipe the device without one second connected on the Interntet. For that purpose you can use numbered wallets for different coins. Read below now Step 4!
+
 
 
 
