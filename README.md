@@ -414,40 +414,41 @@ So, REMEMBER: you will be able to recreate the wallet using exact the same steps
 If you think this was useful, I will be grateful for any donation, thank you, my unknown friend!
 
 My wallets:
+
 Bitcoin: 
 `bc1qhnudrj5jlkrak5lv57wpt9txq7ys4u8xukk0qk`
 
 <img width="199" alt="86b53183f7d4c3046b926" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d250bfb7-f66d-4476-b3ae-1660591095ec">
 
-
+---
 XRP:
 `rMo7sjApwPLMtZji597KzvbQx9dVZB5RB1`
 
 <img width="199" alt="5a21f4381abc73e94e921" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/76be418c-f46e-45f0-8e0d-c446a1e4a2bd">
 
 
-
+---
 Kaspa:
 `kaspa:qqcs4ytttqw0c6047sycjrw2k0wzre8kcarydsm7et0ptsnhgp26vssx2v05w`
 
 <img width="194" alt="f941b766a0af0b9dc3cdd" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d5d46f05-6c01-4d6d-8834-e9fae0387ac3">
 
 
-
+---
 ETH /MATIC /Avalance /XDC:
 `0xE13Bbb95f56e4832de7C2DB968C2dbCFf6ca5fB6`
 
 <img width="192" alt="8f1762b7ef1c8de0c8cb1" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/21830d93-c762-4986-8600-eff68cda5aeb">
 
 
-
+---
 Solana:
 `2VZ8a2nGa9T69hERERbSn4PPr3xcgr7nynX1Buy2pxxg`
 
 <img width="194" alt="301a0e1068ba808db3ea9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/4261cf86-2c0a-4615-907e-7d43a94539f7">
 
 
-
+---
 Hedera:
 `0.0.3495787`
 
