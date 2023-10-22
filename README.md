@@ -31,7 +31,7 @@ Check now that you have downloaded 1) wallet 2) BIP39 tool 3) CyberChef
 
 ---
 > [!WARNING]
-> &#x1F534; **From now you will DISCONNECT from the internet. You will NEVER connect it again during this session.** &#x1F534;
+> &#x1F534; **From now you will DISCONNECT from the internet. You will NEVER connect it again during this session. The safest way to ensure that is to both disconnect your computer from the network and TURN OFF YOUR NETWORK ROUTER/MODEM.** &#x1F534;
 ---
 
 ## STEP TWO: Create system of entropy seed and Wallet #1
