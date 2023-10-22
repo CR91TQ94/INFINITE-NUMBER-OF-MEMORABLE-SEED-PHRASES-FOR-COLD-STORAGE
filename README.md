@@ -129,7 +129,7 @@ Finally you will get the following result in the output
 `bef75166f4633c8dc060b26871cd2b74803ae2bbfa25869fed14932a4e36d8e6b3b7ab0317574388be127d3bc7615a19`
 
 <img width="980" alt="9ab6c1fb4cf7a7702fc8b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/37561952-d2b5-48d0-88cf-5b4197fe2208">
-
+---
 In order to make an infinite number of the seeds (thus also wallets) we will flush it with MD2 hash with numbering ("rounds" or "passes"), **before** the AES encryption. Under "hashes" find MD2 and drop it before AES Encrypt:
 
 <img width="394" alt="3d99e63eff6ffdcf954d9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/015fc621-f8fd-4cac-8c29-943f3c8e938c">
