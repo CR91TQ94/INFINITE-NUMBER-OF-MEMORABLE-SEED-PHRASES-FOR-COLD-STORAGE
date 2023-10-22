@@ -29,9 +29,14 @@ Check now that you have downloaded 1) wallet 2) BIP39 tool 3) CyberChef
 
 !!! YOU CAN ALSO DOWNLOAD ONTO THE SECOND USB DRIVE ALL THESE FILES (point above 2, 3 and 4) ONTO YOUR REGULAR MACHINE, INCLUDING THE WALLET APP, AND BY DOING THIS YOU NEVER CONNECT TO THE INTERNET WHEN USING LIVE MACHINE. !!!
 
+---
 > [!WARNING]
 > &#x1F534; **From now you will DISCONNECT from the internet. You will NEVER connect it again during this session.** &#x1F534;
+---
+
 ## STEP TWO: Create system of entropy seed and Wallet #1
+
+
 We must generate seed entropy, and to accomplish this, we will employ CyberChef.
 
 You are tasked with establishing a reproducible system, one that you can execute multiple times. The system should be something familiar to you but undisclosed to others. During this phase of the procedure, it is imperative that you meticulously write your chosen system onto paper by hand. Upon the completion of the wallet creation, the paper containing your system should be securely incinerated.
@@ -54,9 +59,10 @@ Below will use a book to create 3 hashes, flush it through AES encryption, and m
 ### A) Creating the seed entropy by using a book. 
 We will use New King James Bible of 1611 to create our first seed entropy.
 
+---
 > [!WARNING]
 > &#x1F534; **Please, do not use the same book. It is possible that it can be used by quantum computers in the future. Use an obscure book you like. Be very careful that you don't make any typo. Try the system twice: once following this tutorial, and once making your own seeds.** &#x1F534;
-
+---
 
 Open CyberChef twice in two separate tabs or windows.
 
@@ -73,18 +79,20 @@ In the input window enter the first phrase of the Genesis 1:1:
 
 <img width="1227" alt="69145b7d2a96646c45077" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/759954a3-9626-4ffe-95ab-6f73c7fd368d">
 
+---
 > [!WARNING]
 > &#x1F534; **WARNING: The entered text must be completely identical. Nothing now can be approximate. A text without period dot is not the same as with dot. A text with an extra space on the end is not the same as without an extra space. The computer reads all information. So "earth" is not same as "Earth". It must be 100% identical input. Even a small difference gives you a totally different output.** &#x1F534;
+---
 
 Click then on "copy to clipboard":
 
 <img width="215" alt="f831cf3cc488566a26260" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/af4f413e-d662-4ee8-9979-92fe0125aea9">
 
-Go to new CyberChef window and insert a new recipe "AES Encrypt"
+Go to new CyberChef window and under section **Encryption** find and insert a new recipe **AES Encrypt**
 
 <img width="1227" alt="fc5a058390cc5727c320b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/4515ee32-6738-41a1-8866-475070533f67">
 
-Make sure that it is CBC mode and all selected are HEX:
+Make sure that it is **CBC mode** and all selected are **HEX**:
 
 <img width="344" alt="f074a99ef46b273c86386" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/7e0c8b2e-82f0-4908-974a-1f332cefb7a5">
 
@@ -102,7 +110,7 @@ Now, go to the first CyberChef window and instead of the Genesis 1:1 enter conte
 
 Copy the output 
 `bf8cfd392cbce445e528c00028f62ffe59b2de4b23b9d6a17759383e7d5bcec9` 
-and paste it into the second CyberChef window as "key":
+and paste it into the second CyberChef window as **key**:
 
 <img width="346" alt="035a93abc012825f993db" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/13b16f04-b589-4818-9f70-fca0585faeed">
 
@@ -112,7 +120,8 @@ Now go to the first CyberChef window and insert Genesis 1:3:
 
 Copy the text from the output again 
 `8bc6485b22aeda0ea18c2695d64ee1831a610da3afef78e98f77340b471919f9` 
-and insert it into the second CyberChef window into IV:
+
+and insert it into the second CyberChef window into **IV**:
 
 <img width="345" alt="98dee238f4ef5626f77d6" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/1d1202af-83ac-4bd7-8a50-c419944ebafb">
 
@@ -121,7 +130,7 @@ Finally you will get the following result in the output
 
 <img width="980" alt="9ab6c1fb4cf7a7702fc8b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/37561952-d2b5-48d0-88cf-5b4197fe2208">
 
-In order to make an infinite number of the seeds (thus also wallets) we will flush it with MD2 hash with numbering ("rounds" or "passes"), **before** the AES encryption. Under "hashes" find MD2 and enter it before AES Encrypt:
+In order to make an infinite number of the seeds (thus also wallets) we will flush it with MD2 hash with numbering ("rounds" or "passes"), **before** the AES encryption. Under "hashes" find MD2 and drop it before AES Encrypt:
 
 <img width="394" alt="3d99e63eff6ffdcf954d9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/015fc621-f8fd-4cac-8c29-943f3c8e938c">
 
@@ -314,12 +323,134 @@ After you have got the receiving addresses for your crypto, and confirmed in the
 1. You can send a small amount of your crypto to the new address. Check on the chain explorer if it is present (visible as received). Pay attention that it is the correct address you watch.
 1. Repeat once again the process from 1.-11. and pay attention to the final receiving address. Is it the same? If yes, than good! Now you can send all your cryptos to the new addresses.
 
+---
+Finally, Our system looks like this:
+<img width="977" alt="53d4591e0a7f588179154" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d3ca724e-e77b-4691-b2d1-2357c32ea399">
+<img width="862" alt="135eb8b9c05d3e9325ca7" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/818d105d-7cff-48e3-abf1-da0d861699e0">
+
+## Step 4: CREATING THE NEXT SEED for Wallet #2 and beyond
+You can use the tool above to create your first wallet (seed). But maybe in 10 years, you will become rich and want to move your coins somewhere, or split to multiple wallets or similar. Once your wallet #1 is exposed online, it can be compromised. For that purpose you will use again a brand new Linux Live, you will create the new seed #2 and new wallet address #2.
+
+For that purpose you will do exactly the same as above: creating it OFFLINE.
+And you will choose **2** as rounds in MD2:
+<img width="380" alt="d198d696e8250803d0e8b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/7ae9866c-0a8c-4512-bffa-ae847c996a07">
+
+This gives us a new entropy:
+
+`88faec756a149c734f59e8e216ccfbe9bccc3bf5790c86b4c61306bcadb3f331`
+
+<img width="1031" alt="dcd24ec68e0a5e8947585" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d4983915-2738-4a5c-9905-9d2bb06ff167">
+
+And it gives us a new seed:
+
+fit basic slender engine mechanic amazing easily welcome rack flock bridge occur finish space little limb prison devote harsh enact lizard mechanic swallow love
+This wallet will be your new receiving address (Native SEGWIT):
+
+`bc1qmnhyhl38tf3rcljt6k70t39wmytel2fvwchz2m`
+
+---
+So, if you have 100 BTC, and you want to move to an Exchange 10, and keep 90, do the following:
+
+1. move 90 to your wallet #2 and 
+1. 10 to the Exchange. 
+
+So your wallet #1 will be now empty, and wallet #2 (never been online) with funds. Basically all wallets with funds will never go online. Once you wish to take it online, it is done 
+
+a) on a brand new system, 
+b) using a trusted wallet, 
+c) you will move your funds always to the next offline wallet.
+
+Basically, you can right now create all wallet addresses and give them names.
+
+`Wallet #1: bc1q8vye7d7s46qwuvaxzgjem2yufj6n4vax8w6s0t
+Wallet #2: bc1qmnhyhl38tf3rcljt6k70t39wmytel2fvwchz2m
+Wallet #3: bc1qhkk0xn42yjya5rf4zkn8xfrtg7crjv4sjzcmdk
+Wallet #4: bc1qchn4w2j2xk3wzpc4ars48tg9qnurvpwcfehn9a
+Wallet #5: bc1qhdtnvsxzckczpfv04yl9w6e6228fz552dtfr6t
+...etc.`
+Now you have the list of all receiving addresses and you can use it in this order.
+
+---
+> [!WARNING]
+> &#x1F534; **Caution: It is imperative that you maintain the confidentiality and security of these incoming addresses. If your large funds are known, you might be attacked. Employ KeePass database or an encrypted text file, protected by a PGP key, to safeguard these addresses. While it may not pose an insurmountable issue if these encrypted files are lost, recreating them can be an arduous undertaking, particularly if it necessitates the repetitive booting into a Linux environment and executing the entire process.
+---
+
+Act prudently by securing these addresses without delay, as this will enable you to effortlessly enter them into exchanges using a copy-paste method when acquiring your cryptocurrencies, facilitating their subsequent transfer to your cold storage wallets.
+
+## Step 5: SAFEGUARD YOUR SYSTEM
+In order to replicate your actions consistently, it is imperative to retain a detailed recollection of your previous steps. **It is advised against storing your system in an accessible manner, especially on digital devices such as computers or phones.**
+
+Instead, commit your system to paper, preferably within the pages of a physical book, such as a handwritten cookbook, where it can be subtly concealed amidst unrelated content. Employ cryptic references, including terms like 'Keccak 256,' 'AES,' and 'MD2 1...,' making it less conspicuous and challenging for any observer to discern its significance.
+
+To ensure the permanence of your system, periodically engage in the practice of reiterating the process, thus reinforcing your memory.
+
+## USING OTHER INPUTS
+Use always AES encryption + various hashes. **Never use "only hash" to generate the entropy.** Remember, in 10-20 years maybe we will have quantum computers, these will be able to check hashes of every single word or combination in all available books. So be smart. 
+
+As an idea, you can use, instead of 3 verses, following inputs:
+
+1. Use 3 ISBN numbers of exact edition of your top 3 books. This could be: 
+ISBN 978-3828-4757-43-85, or similar.
+1. 3 phone numbers of your family, incl. international call (example: +44578439574389)
+Use 3 chemical formulas such as: (CH3)3CH, C12H16N2 or so.
+1. 3 engine types of your beloved Mercedes cars such as: M260 E20 DE LA, M282 DE14 or similar
+1. The first 30 notes in a three-part fugue, each voice is the separate input, such as: 64,67,61,62,66,63,63,62,68,69,65,63,63,62,68,69,6564,67,61 for voice 1 and so on.
+
+So be creative, but not too creative, otherwise you will forget it! You can use something mathematical formulas with various lengths such as "pi^13.55". Remember: you should be able to remember it!
+
+##  THE MATH
+"But in 10 or 20 years these sites will maybe not work!"
+
+Don't worry. Everything is the math. Creating Keccak 256 hash of a text string will always give the same hash string result even in other programs or tools. It is a mathematical principle that gives you the same result. It is the same with AES encryption. It will be same in forever. And it is the same with the seed. Everything is the math.
+
+So, REMEMBER: you will be able to recreate the wallet using exact the same steps, even without CyberChef or BIP39 site above.
+
+### Step 6:
+If you think this was useful, I will be grateful for any donation, thank you, my unknown friend!
+
+My wallets:
+Bitcoin: 
+`bc1qhnudrj5jlkrak5lv57wpt9txq7ys4u8xukk0qk`
+
+<img width="199" alt="86b53183f7d4c3046b926" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d250bfb7-f66d-4476-b3ae-1660591095ec">
+
+
+XRP:
+`rMo7sjApwPLMtZji597KzvbQx9dVZB5RB1`
+
+
+
+Kaspa:
+`kaspa:qqcs4ytttqw0c6047sycjrw2k0wzre8kcarydsm7et0ptsnhgp26vssx2v05w`
+
+
+
+ETH /MATIC /Avalance /XDC:
+`0xE13Bbb95f56e4832de7C2DB968C2dbCFf6ca5fB6`
+
+
+
+Solana:
+`2VZ8a2nGa9T69hERERbSn4PPr3xcgr7nynX1Buy2pxxg`
+
+
+
+Monero:
+`488zAEiixaVJdLDyCqNLFaPzuwybmzbAXaSme1EoUBFAKPLZ6vRQiJpLWGr1tyBH5eXvDHVqcdebvWf998n5722EV7SfSeW`
+
+
+
+Dogecoin:
+`DCnsHRu71kVuNijE9pULRhifayooP9hRqP`
+
+
+
+Hedera:
+`0.0.3495787`
 
 
 
 
 
-
-
-
+# GOD LUCK!                        
 
