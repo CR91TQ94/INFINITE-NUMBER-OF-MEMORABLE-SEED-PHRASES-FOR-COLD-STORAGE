@@ -54,19 +54,11 @@ Below will use a book to create 3 hashes, flush it through AES encryption, and m
 We will use New King James Bible of 1611 to create our first seed entropy.
 
 &#x1F534; **Please, do not use the same book. It is possible that it can be used by quantum computers in the future. Use an obscure book you like. Be very careful that you don't make any typo. Try the system twice: once following this tutorial, and once making your own seeds.** &#x1F534;
+
 Open CyberChef twice in two separate tabs or windows.
 
 Under Hashing find Keccak and add to the ”Recipe”.
 
 Choose size 256.
 
-
-
-
-
-
-
-
-
-
-
+!(/main/assets/44935a765cd7eae93ac25.png)
