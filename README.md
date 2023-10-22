@@ -88,13 +88,16 @@ Click then on "copy to clipboard":
 
 <img width="215" alt="f831cf3cc488566a26260" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/af4f413e-d662-4ee8-9979-92fe0125aea9">
 
+
 Go to new CyberChef window and under section **Encryption** find and insert a new recipe **AES Encrypt**
 
 <img width="1227" alt="fc5a058390cc5727c320b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/4515ee32-6738-41a1-8866-475070533f67">
 
+
 Make sure that it is **CBC mode** and all selected are **HEX**:
 
 <img width="344" alt="f074a99ef46b273c86386" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/7e0c8b2e-82f0-4908-974a-1f332cefb7a5">
+
 
 Now, paste the copied text 
 `950b5cfa2facafab5c5bb71b86856832be322262e69eb4025fc170b58aeed2b8` 
@@ -102,17 +105,20 @@ from the previous window into the input window:
 
 <img width="633" alt="5b37c0172a3a5806f50d8" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/ba26e506-fe7c-4e9d-aea1-fc3f7af1f7a7">
 
+
 Now, go to the first CyberChef window and instead of the Genesis 1:1 enter content of 1:2:
 
 `And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters.`
 
 <img width="985" alt="f2405952c3095811b7302" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/04b4b2c0-6823-465b-96ce-e360dd02a93b">
 
+
 Copy the output 
 `bf8cfd392cbce445e528c00028f62ffe59b2de4b23b9d6a17759383e7d5bcec9` 
 and paste it into the second CyberChef window as **key**:
 
 <img width="346" alt="035a93abc012825f993db" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/13b16f04-b589-4818-9f70-fca0585faeed">
+
 
 Now go to the first CyberChef window and insert Genesis 1:3:
 
@@ -125,18 +131,22 @@ and insert it into the second CyberChef window into **IV**:
 
 <img width="345" alt="98dee238f4ef5626f77d6" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/1d1202af-83ac-4bd7-8a50-c419944ebafb">
 
+
 Finally you will get the following result in the output
 `bef75166f4633c8dc060b26871cd2b74803ae2bbfa25869fed14932a4e36d8e6b3b7ab0317574388be127d3bc7615a19`
 
 <img width="980" alt="9ab6c1fb4cf7a7702fc8b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/37561952-d2b5-48d0-88cf-5b4197fe2208">
+
 ---
 In order to make an infinite number of the seeds (thus also wallets) we will flush it with MD2 hash with numbering ("rounds" or "passes"), **before** the AES encryption. Under "hashes" find MD2 and drop it before AES Encrypt:
 
 <img width="394" alt="3d99e63eff6ffdcf954d9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/015fc621-f8fd-4cac-8c29-943f3c8e938c">
 
+
 Change number 18 into number 1 (but you can start with another as the #1 wallet, for instance year of your birth, in that case type 1980 or so, but here the example shows "1"):
 
 <img width="371" alt="e1a5fcf7723a84e53648c" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/9e7b74b7-80bc-4ced-98c7-a856369ce995">
+
 
 So this will be used to generate our FIRST seed, or the first wallet. The final output looks like this:
 
@@ -152,13 +162,16 @@ Copy the output from CyberChef second window `86793e0d01c7169f8e0be36f0d1f01eba7
 
 <img width="976" alt="6b582213c67b7e3706e55" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b2a5f9d0-832a-4e07-b3e0-99885d4b012a">
 
+
 Click on **Generate** to initialize (don't worry it stays 15 words):
 
 <img width="598" alt="48555fa276352f4f35e70" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d31c83aa-2f27-425c-b6f2-c10f66e8c9bd">
 
+
 Now, click on **Show entropy details**
 
 <img width="195" alt="80837af274b66d9b41ecd" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b91cd052-b771-4bff-ac1f-4815e956f4b9">
+
 
 When ckecked, a new field above called **entropy** will open. Select the text inside of the field and delete it. Next, paste the text you copied from CyberChef `86793e0d01c7169f8e0be36f0d1f01eba783d53368ad2ed921449997db6c154d`:
 
@@ -168,9 +181,11 @@ When ckecked, a new field above called **entropy** will open. Select the text in
 
 <img width="647" alt="24b2dab7651ae152029f4" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/aa018d11-5e52-41ce-a5ee-6f5d800a44b6">
 
+
 Finally we have got our 24 word mnemonic phrase:
 
 <img width="951" alt="95a7d044ff74f22003926" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/c29f7da9-cc00-48a0-948e-8522f78983c9">
+
 
 The phrase is:
 
@@ -184,9 +199,11 @@ Now we can proceed to get information about our incoming addresses, the Bitcoin 
 
 <img width="275" alt="2a793d666cd72decf17c0" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/3b291c80-3db7-4865-aad1-53abf460d54f">
 
+
 The Bitcoin is automatically selected, here is the address. Remember, do not change any other settings. Your first address (0, i.e. zero) is the correct first receiving address:
 
 <img width="624" alt="f08dfc964ec75798d875d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/94ce9bea-6be9-4013-a73e-32153ec1e25b">
+
 
 Your BTC address is:
 
@@ -196,17 +213,21 @@ For other coins select the desired coin:
 
 <img width="482" alt="8ffe6e89c2fc258e09761" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/664e5e20-407d-4909-bd98-dff8b4368e76">
 
+
 Ripple/XRP:
 
 <img width="640" alt="4687c8d75c6c2be0504df" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d96525d0-9a29-4c30-b22a-2540432266aa">
+
 
 Ripple XRP address is:
 
 `rQBWfyvfh1kMi5DFAdebUHKhTbWeEwpyin`
 
+
 Ethereum:
 
 <img width="699" alt="160c5a5689a8c3ae37071" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/8ff00f2d-e63a-402a-a061-d57a5a2b7c08">
+
 
 Ethereum ETH (and other L2 addresses) is:
 
@@ -225,9 +246,12 @@ Open OneKey, start by importing a wallet using the seed:
 
 <img width="276" alt="cf03ddc942572f2abb846" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/e794588b-3b6b-493c-8fb7-72baf232513f">
 
+
 <img width="270" alt="f68dac89f8fb5c77f29b9" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/f991b81e-e222-42d0-a1e5-c0ce985ab153">
 
+
 <img width="224" alt="25394329cd7b4da760e79" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/beebfe45-38a1-481e-b229-c15813d4a7ab">
+
 
 And paste the seed you have generated in BIP39 tool:
 
@@ -238,9 +262,11 @@ Click on Ethereum (here I am using online computer therefore the green dot. Beca
 
 <img width="155" alt="1ddf4322932344bde0dba" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/c406bf44-0eb4-401c-b4ac-c108d2b15b74">
 
+
 Click on Receive to see the address:
 
 <img width="178" alt="84078a53385e18663695d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/cc85342c-a26f-408d-b1cf-a6028a030982">
+
 
 <img width="376" alt="a6d1b22f66c5551d9242e" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/197d9683-2fd1-4ee7-872b-ee511635d1e5">
 
@@ -249,6 +275,7 @@ Click on Receive to see the address:
 Now check XRP. Click on the dropdown icon of the network and choose Ripple, and then Create account:
 
 <img width="292" alt="a371fd1a404bd8e00e35d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/973b0b5e-0a6d-495e-b7a3-e0b2e5294577">
+
 
 Again, click on Receive to see the receiving address:
 
@@ -270,17 +297,21 @@ Click on the wallet dropdown:
 
 <img width="330" alt="6c21ff64a09fc6e3cb558" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/9ec634d6-ab3f-4afa-95f8-1dcf0b12cdf2">
 
+
 Click on +:
 
 <img width="382" alt="2999e31d897767194619e" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/687ee27a-8349-4024-a7c5-c04233ffda0f">
+
 
 Click on add account:
 
 <img width="245" alt="34afa92e18d1521810c4d" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d4b14e83-a5e7-43e2-bc5b-a1ce7b8ee681">
 
+
 Choose Native Segwit, and click on the Receiving address:
 
 <img width="373" alt="32071716aa3808c41ccff" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b4438636-621b-46b8-ac80-7cb7061a8cdf">
+
 
 Well, this is an unknown address. How it can happen?
 
@@ -289,6 +320,7 @@ Go to your BIP39 generator.
 Instead of BIP44 use **BIP84** as the Derivation path:
 
 <img width="389" alt="8c70c387ccb7cb1a83505" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/e93258ca-d169-4374-9886-72047204b74d">
+
 
 Well, this is the same address as in the OneKey wallet, so everything is good!!
 
@@ -328,7 +360,9 @@ After you have got the receiving addresses for your crypto, and confirmed in the
 
 ---
 Finally, Our system looks like this:
+
 <img width="977" alt="53d4591e0a7f588179154" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d3ca724e-e77b-4691-b2d1-2357c32ea399">
+
 <img width="862" alt="135eb8b9c05d3e9325ca7" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/818d105d-7cff-48e3-abf1-da0d861699e0">
 
 ## Step 4: CREATING THE NEXT SEED for Wallet #2 and beyond
@@ -343,6 +377,7 @@ This gives us a new entropy:
 `88faec756a149c734f59e8e216ccfbe9bccc3bf5790c86b4c61306bcadb3f331`
 
 <img width="1031" alt="dcd24ec68e0a5e8947585" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/d4983915-2738-4a5c-9905-9d2bb06ff167">
+
 
 And it gives us a new seed:
 
