@@ -61,4 +61,4 @@ Under Hashing find Keccak and add to the ”Recipe”.
 
 Choose size 256.
 
-!([/main/assets/44935a765cd7eae93ac25.png](https://raw.githubusercontent.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/main/assets/44935a765cd7eae93ac25.png)https://raw.githubusercontent.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/main/assets/44935a765cd7eae93ac25.png)
+<img width="1222" alt="44935a765cd7eae93ac25" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/e3308602-2f31-4eeb-8ff0-60dc767d9ba0">
