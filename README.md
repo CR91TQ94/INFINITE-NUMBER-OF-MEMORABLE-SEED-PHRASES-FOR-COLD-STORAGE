@@ -346,7 +346,8 @@ This gives us a new entropy:
 
 And it gives us a new seed:
 
-fit basic slender engine mechanic amazing easily welcome rack flock bridge occur finish space little limb prison devote harsh enact lizard mechanic swallow love
+`fit basic slender engine mechanic amazing easily welcome rack flock bridge occur finish space little limb prison devote harsh enact lizard mechanic swallow love`
+
 This wallet will be your new receiving address (Native SEGWIT):
 
 `bc1qmnhyhl38tf3rcljt6k70t39wmytel2fvwchz2m`
