@@ -124,16 +124,12 @@ Now go to the first CyberChef window and insert Genesis 1:3:
 
 `And God said, Let there be light: and there was light.`
 
-Copy the text from the output again 
-`8bc6485b22aeda0ea18c2695d64ee1831a610da3afef78e98f77340b471919f9` 
-
-and insert it into the second CyberChef window into **IV**:
+Copy the text from the output again `8bc6485b22aeda0ea18c2695d64ee1831a610da3afef78e98f77340b471919f9` and insert it into the second CyberChef window into **IV**:
 
 <img width="345" alt="98dee238f4ef5626f77d6" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/1d1202af-83ac-4bd7-8a50-c419944ebafb">
 
 
-Finally you will get the following result in the output
-`bef75166f4633c8dc060b26871cd2b74803ae2bbfa25869fed14932a4e36d8e6b3b7ab0317574388be127d3bc7615a19`
+Finally you will get the following result in the output `bef75166f4633c8dc060b26871cd2b74803ae2bbfa25869fed14932a4e36d8e6b3b7ab0317574388be127d3bc7615a19`
 
 <img width="980" alt="9ab6c1fb4cf7a7702fc8b" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/37561952-d2b5-48d0-88cf-5b4197fe2208">
 
@@ -148,9 +144,7 @@ Change number 18 into number 1 (but you can start with another as the #1 wallet,
 <img width="371" alt="e1a5fcf7723a84e53648c" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/9e7b74b7-80bc-4ced-98c7-a856369ce995">
 
 
-So this will be used to generate our FIRST seed, or the first wallet. The final output looks like this:
-
-`86793e0d01c7169f8e0be36f0d1f01eba783d53368ad2ed921449997db6c154d`
+So this will be used to generate our FIRST seed, or the first wallet. The final output looks like this: `86793e0d01c7169f8e0be36f0d1f01eba783d53368ad2ed921449997db6c154d`
 
 <img width="977" alt="d799f6bfcb5a0a0acc94f" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/27ddd4e9-060c-45a6-baaa-f99a86eba5df">
 
@@ -187,11 +181,7 @@ Finally we have got our 24 word mnemonic phrase:
 <img width="951" alt="95a7d044ff74f22003926" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/c29f7da9-cc00-48a0-948e-8522f78983c9">
 
 
-The phrase is:
-
-`accident angry rent manage fade foot sudden beauty parade deal maple among learn affair plug slim high depth urge swarm swallow lazy camera gain`
-
-This is your seed for the Wallet #1.
+The phrase is: `accident angry rent manage fade foot sudden beauty parade deal maple among learn affair plug slim high depth urge swarm swallow lazy camera gain` This is your seed for the Wallet #1.
 
 ### C) Receiving addresses 
 
