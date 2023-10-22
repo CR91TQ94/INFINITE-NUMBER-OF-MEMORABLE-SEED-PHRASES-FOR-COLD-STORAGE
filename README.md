@@ -216,7 +216,10 @@ Ethereum ETH (and other L2 addresses) is:
 
 We will use OneKey to import our seed and see if we get the same addresses.
 
-&#x1F534; **REMEMBER: keep the computer offline all the time.** &#x1F534;
+---
+> [!WARNING]
+> &#x1F534; **REMEMBER: keep the computer offline all the time.** &#x1F534;
+---
 
 Open OneKey, start by importing a wallet using the seed:
 
