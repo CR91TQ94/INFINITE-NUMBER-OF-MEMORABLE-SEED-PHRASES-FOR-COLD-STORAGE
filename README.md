@@ -29,7 +29,8 @@ Check now that you have downloaded 1) wallet 2) BIP39 tool 3) CyberChef
 
 !!! YOU CAN ALSO DOWNLOAD ONTO THE SECOND USB DRIVE ALL THESE FILES (point above 2, 3 and 4) ONTO YOUR REGULAR MACHINE, INCLUDING THE WALLET APP, AND BY DOING THIS YOU NEVER CONNECT TO THE INTERNET WHEN USING LIVE MACHINE. !!!
 
-&#x1F534; **From now you will DISCONNECT from the internet. You will NEVER connect it again during this session.** &#x1F534;
+> [!WARNING]
+> &#x1F534; **From now you will DISCONNECT from the internet. You will NEVER connect it again during this session.** &#x1F534;
 ## STEP TWO: Create system of entropy seed and Wallet #1
 We must generate seed entropy, and to accomplish this, we will employ CyberChef.
 
@@ -53,7 +54,9 @@ Below will use a book to create 3 hashes, flush it through AES encryption, and m
 ### A) Creating the seed entropy by using a book. 
 We will use New King James Bible of 1611 to create our first seed entropy.
 
-&#x1F534; **Please, do not use the same book. It is possible that it can be used by quantum computers in the future. Use an obscure book you like. Be very careful that you don't make any typo. Try the system twice: once following this tutorial, and once making your own seeds.** &#x1F534;
+> [!WARNING]
+> &#x1F534; **Please, do not use the same book. It is possible that it can be used by quantum computers in the future. Use an obscure book you like. Be very careful that you don't make any typo. Try the system twice: once following this tutorial, and once making your own seeds.** &#x1F534;
+
 
 Open CyberChef twice in two separate tabs or windows.
 
@@ -70,7 +73,8 @@ In the input window enter the first phrase of the Genesis 1:1:
 
 <img width="1227" alt="69145b7d2a96646c45077" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/759954a3-9626-4ffe-95ab-6f73c7fd368d">
 
-#### &#x1F534; WARNING: The entered text must be completely identical. Nothing now can be approximate. A text without period dot is not the same as with dot. A text with an extra space on the end is not the same as without an extra space. The computer reads all information. So "earth" is not same as "Earth". It must be 100% identical input. Even a small difference gives you a totally different output. &#x1F534;
+> [!WARNING]
+> &#x1F534; **WARNING: The entered text must be completely identical. Nothing now can be approximate. A text without period dot is not the same as with dot. A text with an extra space on the end is not the same as without an extra space. The computer reads all information. So "earth" is not same as "Earth". It must be 100% identical input. Even a small difference gives you a totally different output.** &#x1F534;
 
 Click then on "copy to clipboard":
 
@@ -278,14 +282,37 @@ Well, this is the same address as in the OneKey wallet, so everything is good!!
 
 <img width="689" alt="6aaf234049fddb026987e" src="https://github.com/CR91TQ94/INFINITE-NUMBER-OF-MEMORABLE-SEED-PHRASES-FOR-COLD-STORAGE/assets/148721952/b20124d2-586c-44c3-91d9-85e048c91963">
 
-## SYSTEM OF WALLETS
-BTC uses BIP84 nowadays and you should use it as well.
-All other coins use BIP44. Please check Coinomi's tool (fork of the Ian Coleman's BIP39 generator) for missing coins. Search for it.
-Every coin wallet starts with derivation path that is 0 (zero). It is the FIRST wallet. You should use that address, but for the privacy reasons using a wallet "online", you can increase your privacy by using other addresses from the same wallet seed. However HERE WE WILL USE ONLY THE FIRST, because it will be our cold storage, and you don't need any privacy for that reason.
-Some networks still don't have import function (Hedera's HBAR), so you cannot use your own seed, unfortunately. 
-Some coins are not available in wallets (Quant or Kaspa). Still you can use your 24-word seed phrase to create wallets for these coins in their respective wallets. In order to do it you need to use a separate wallet app just for these coins. However, be sure that you should always enter your seed into an offline device to get the receive address and afterwards you will wipe the device without one second connected on the Interntet. For that purpose you can use numbered wallets for different coins. Read below now Step 4!
+#### SYSTEM OF WALLETS
+1. BTC uses BIP84 nowadays and you should use it as well.
+1. All other coins use BIP44. Please check Coinomi's tool (fork of the Ian Coleman's BIP39 generator) for missing coins. Search for it.
+1. Every coin wallet starts with derivation path that is 0 (zero). It is the FIRST wallet. You should use that address, but for the privacy reasons using a wallet "online", you can increase your privacy by using other addresses from the same wallet seed. However HERE WE WILL USE ONLY THE FIRST, because it will be our cold storage, and you don't need any privacy for that reason.
+1. Some networks still don't have import function (Hedera's HBAR), so you cannot use your own seed, unfortunately. 
+1. Some coins are not available in wallets (Quant or Kaspa). Still you can use your 24-word seed phrase to create wallets for these coins in their respective wallets. In order to do it you need to use a separate wallet app just for these coins. However, be sure that you should always enter your seed into an offline device to get the receive address and afterwards you will wipe the device without one second connected on the Interntet. For that purpose you can use numbered wallets for different coins. Read below now Step 4!
 
+## Step 3: RECOVER THE SYSTEM
+After you have got the receiving addresses for your crypto, and confirmed in the wallet they exist, try to repeat the same process once again. I will lead you through this process.
 
+1. Reboot.
+1. Boot to Linux Live
+1. Go and download: wallet app (OneKey), CyberChef and BIP39 generator.
+1. Go offline.
+1. Repeat the process of getting the entropy for your seed, from your favorite poet:
+   - Generate three Keccak hashes (HEX hashes), 256 size of the three verses. The longer the text - the better.
+   - Create flow of AES encryption using CBC mode, the first hash above goes as the input, second as Key, third as IV.  
+   - Check everything is HEX.
+   - add MD2 with "round 1" before the AES encryption.
+1. This output copy and go to BIP39 tool.
+   - click Generate to initialize
+   - click on "Show entropy details"
+   - delete the current Entropy and paste your HEX from the CyberChef.
+   - Choose 24 words length.
+1. Verify that you have got the same seed.
+1. If verification gives the same seed - you have succeeded!
+1. Try again to import into OneKey the same seed. Check and verify if the addresses are the same. 
+1. If yes, you can proceed by importing the receiving addresses into your phone. Just scan the receiving addresses in order to import in your phone wallet as WATCH ONLY.
+1. Reboot normally.
+1. You can send a small amount of your crypto to the new address. Check on the chain explorer if it is present (visible as received). Pay attention that it is the correct address you watch.
+1. Repeat once again the process from 1.-11. and pay attention to the final receiving address. Is it the same? If yes, than good! Now you can send all your cryptos to the new addresses.
 
 
 
