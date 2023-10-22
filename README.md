@@ -383,10 +383,10 @@ So, if you have 100 BTC, and you want to move to an Exchange 10, and keep 90, do
 1. move 90 to your wallet #2 and 
 1. 10 to the Exchange. 
 
-So your wallet #1 will be now empty, and wallet #2 (never been online) with funds. Basically all wallets with funds will never go online. Once you wish to take it online, it is done 
+So your wallet #1 will be now empty, and wallet #2 (never been online) with funds. Basically all wallets with funds will never go online. Once you wish to take it online, it is done:
 
 a) on a brand new system, 
-b) using a trusted wallet, 
+b) using a trusted app wallet, 
 c) you will move your funds always to the next offline wallet.
 
 Basically, you can right now create all wallet addresses and give them names.
