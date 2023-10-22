@@ -366,13 +366,13 @@ c) you will move your funds always to the next offline wallet.
 
 Basically, you can right now create all wallet addresses and give them names.
 
-`* Wallet #1: bc1q8vye7d7s46qwuvaxzgjem2yufj6n4vax8w6s0t
+` * Wallet #1: bc1q8vye7d7s46qwuvaxzgjem2yufj6n4vax8w6s0t
 * Wallet #2: bc1qmnhyhl38tf3rcljt6k70t39wmytel2fvwchz2m
 * Wallet #3: bc1qhkk0xn42yjya5rf4zkn8xfrtg7crjv4sjzcmdk
 * Wallet #4: bc1qchn4w2j2xk3wzpc4ars48tg9qnurvpwcfehn9a
 * Wallet #5: bc1qhdtnvsxzckczpfv04yl9w6e6228fz552dtfr6t
-* ...etc.`
-* 
+* ...etc. `
+
 Now you have the list of all receiving addresses and you can use it in this order.
 
 ---
