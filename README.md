@@ -343,7 +343,7 @@ After you have got the receiving addresses for your crypto, and confirmed in the
 1. Verify that you have got the same seed.
 1. If verification gives the same seed - you have succeeded!
 1. Try again to import into OneKey the same seed. Check and verify if the addresses are the same. 
-1. &#x1F534; If yes, you can proceed by importing the receiving addresses into your phone. Just scan the receiving addresses in order to import in your phone wallet as WATCH ONLY.
+1. :+1: **If yes, you can proceed by importing the receiving addresses into your phone. Just scan the receiving addresses in order to import in your phone wallet as WATCH ONLY.** :+1:
 1. Reboot normally.
 1. You can send a small amount of your crypto to the new address. Check on the chain explorer if it is present (visible as received). Pay attention that it is the correct address you watch.
 1. Repeat once again the process from 1.-11. and pay attention to the final receiving address. Is it the same? If yes, than good! Now you can send all your cryptos to the new addresses.
